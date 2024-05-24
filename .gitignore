@@ -1,0 +1,4 @@
+api/node_modules
+.idea
+frontend/demo-app/.angular
+frontend/demo-app/node_modules

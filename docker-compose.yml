@@ -1,0 +1,17 @@
+version: '1.0'
+services:
+  db:
+    build: db
+    ports:
+      - "27017:27017"
+    container_name: mean_db
+  api:
+    build: api
+    ports:
+      - "3000:3000"
+    container_name: mean_api
+  frontend:
+    build: demo-app
+    ports:
+      - "4000:4000"
+    container_name: mean_angular
